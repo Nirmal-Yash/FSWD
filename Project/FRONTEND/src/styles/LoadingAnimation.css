@@ -1,0 +1,70 @@
+/* Loading Animation Styles */
+
+/* Common container styles */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+
+/* Full page overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading text */
+.loading-text {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 500;
+  animation: fadeInOut 1.5s infinite alternate;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+/* Animation GIF Container */
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animation GIF sizes */
+.animation-container.animation-small img {
+  width: 40px;
+  height: 40px;
+}
+
+.animation-container.animation-medium img {
+  width: 80px;
+  height: 80px;
+}
+
+.animation-container.animation-large img {
+  width: 120px;
+  height: 120px;
+}
+
+/* Animation GIF styling */
+.animation-gif {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

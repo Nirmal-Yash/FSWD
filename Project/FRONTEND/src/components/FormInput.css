@@ -1,0 +1,24 @@
+/* src/components/FormInput.css */
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form-input label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-input input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input input:focus {
+    border-color: #00aaff;
+  }
